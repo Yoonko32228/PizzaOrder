@@ -200,7 +200,6 @@ export default function PizzaBuilder() {
               <div className="flex items-center justify-between rounded-2xl bg-gray-50 p-5">
                 <div>
                   <p className="font-bold text-gray-800">Пиццаны тоо</p>
-                  <p className="text-sm text-gray-400">1-5 ширхэг</p>
                 </div>
 
                 <div className="flex items-center gap-5">
@@ -220,7 +219,6 @@ export default function PizzaBuilder() {
                   </span>
 
                   <button
-                    disabled={count === 5}
                     onClick={() => {
                       setCount(count + 1);
                       setOrdered(false);
